@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JungleTour</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="/css/passeio_info.css">
+    <script src="/js/script.js"></script>
+    <style>
+        .tour-detail-hero {
+            background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/img/cachoeira.jpg);
+            background-size: cover;
+            background-position: center;
+            height: 60vh;
+            display: flex;
+            align-items: flex-end;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <!-- Cabeçalho -->
+    <header>
+        <div class="container header-container">
+            <a href="index.html" class="logo">Jungle<span>Tour</span></a>
+            <nav>
+                <ul>
+                    <li><a href="/index.html">Início</a></li>
+                    <li><a href="/passeios/index.html">Passeios</a></li>
+                    <li><a href="/sobre.html">Sobre</a></li>
+                    <li><a href="/contato.html">Contato</a></li>
+                    <li><a href="#" class="cta-button" id="loginButton">Login</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Banner de Mediação -->
+    <div class="mediation-banner">
+        <div class="container">
+            <i class="fas fa-handshake"></i>
+            <strong>JungleTour é o intermediário de confiança</strong> entre você e os melhores provedores de ecoturismo. Compare opções e escolha a melhor!
+        </div>
+    </div>
+
+    <!-- Hero da Página de Detalhes -->
+    <section class="tour-detail-hero">
+        <div class="tour-hero-content container">
+            <div class="tour-title-container">
+                <div class="tour-title">
+                    <h1>Conheça as cachoeiras de Presidente Figueiredo</h1>
+                    <div class="tour-location">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>Amazônia, Brasil</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção de Provedores -->
+    <section class="providers-section">
+        <div class="container">
+            <h2 class="providers-title">Provedores Disponíveis</h2>
+            <div class="providers-grid">
+                <!-- Provedor 1 -->
+                <div class="provider-card">
+                    <div class="provider-header">
+                        <div class="provider-logo">
+                            <img src="/img/amazonecotours logo.png" alt="Amazon EcoTours">
+                        </div>
+                        <div class="provider-info">
+                            <div class="provider-name">Amazon EcoTours</div>
+                            <div class="provider-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                                <span>(128 avaliações)</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="provider-details">
+                        <div class="price-section">
+                            <div>
+                                <div class="price-amount">R$ 100.00</div>
+                                <div class="price-per">por pessoa</div>
+                            </div>
+                            <div>
+                                <i class="fas fa-clock"></i> 1 dia
+                            </div>
+                        </div>
+                        <div class="provider-features">
+                            <div class="feature-item">
+                                <i class="fas fa-check feature-icon"></i>
+                                <span>Guias especializados em inglês e português</span>
+                            </div>
+                            <br>
+                            <div class="feature-item">
+                                <i class="fas fa-check feature-icon"></i>
+                                <span>Grupos pequenos (máx. 12 pessoas)</span>
+                            </div>
+                        </div>
+                        <a href="#" class="book-now-btn">Reservar com este provedor</a>
+                    </div>
+                </div>
+
+                <!-- Provedor 2 -->
+                <div class="provider-card">
+                    <div class="provider-header">
+                        <div class="provider-logo">
+                            <img src="/img/selvaadventures.png" alt="Selva Adventures">
+                        </div>
+                        <div class="provider-info">
+                            <div class="provider-name">Selva Adventures</div>
+                            <div class="provider-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="far fa-star"></i>
+                                <span>(87 avaliações)</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="provider-details">
+                        <div class="price-section">
+                            <div>
+                                <div class="price-amount">R$ 150.00</div>
+                                <div class="price-per">por pessoa</div>
+                            </div>
+                            <div>
+                                <i class="fas fa-clock"></i> 2 dia
+                            </div>
+                        </div>
+                        <div class="provider-features">
+                            <div class="feature-item">
+                                <i class="fas fa-check feature-icon"></i>
+                                <span>Grupos pequenos (máx. 8 pessoas)</span>
+                            </div>
+                            <br>
+                            <br>
+                            <div class="feature-item">
+                                <i class="fas fa-check feature-icon"></i>
+                                <span>Inclui passeio na trilha. </span>
+                            </div>
+                        </div>
+                        <a href="#" class="book-now-btn">Reservar com este provedor</a>
+                    </div>
+                </div>
+
+                <!-- Provedor 3 -->
+                <div class="provider-card">
+                    <div class="provider-header">
+                        <div class="provider-logo">
+                            <img src="/img/florestalogo.png" alt="Floresta Expeditions">
+                        </div>
+                        <div class="provider-info">
+                            <div class="provider-name">Floresta Expeditions</div>
+                            <div class="provider-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <span>(215 avaliações)</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="provider-details">
+                        <div class="price-section">
+                            <div>
+                                <div class="price-amount">R$ 200.00</div>
+                                <div class="price-per">por pessoa</div>
+                            </div>
+                            <div>
+                                <i class="fas fa-clock"></i> 3 dias
+                            </div>
+                        </div>
+                        <div class="provider-features">
+                            <div class="feature-item">
+                                <i class="fas fa-check feature-icon"></i>
+                                <span>Expedição premium com guias especializados</span>
+                            </div>
+                        
+                            <div class="feature-item">
+                                <i class="fas fa-check feature-icon"></i>
+                                <span> Cobertura total da alimentação/transporte.</span>
+                            
+                            </div>
+                        </div>
+                        <a href="#" class="book-now-btn">Reservar com este provedor</a>
+                    </div>
+                </div>
+
+                
+                
+    </section>
+
+    <!-- Conteúdo Principal -->
+    <div class="container">
+        <div class="tour-main-content">
+            <div class="tour-content-left">
+                <!-- Descrição -->
+                <section class="tour-section">
+                    <h2 class="section-title">Sobre o Passeio</h2>
+                    <div class="tour-description">
+                        <p>Descubra quedas d'água cristalinas escondidas no coração da Amazônia. Banhe-se em piscinas naturais cercadas por floresta virgem, perfeitas para relaxar e se reconectar com a natureza. Aventure-se por trilhas suaves que levam a cenários deslumbrantes, onde o som das cascatas e o canto dos pássaros criam a trilha sonora perfeita. Uma experiência refrescante e inesquecível no meio da selva amazônica.</p>
+                        
+                    </div>
+
+                    <!-- Processo de Intermediação -->
+                    <div class="mediation-process">
+                        <h3><i class="fas fa-shield-alt"></i> Como funciona nossa intermediação</h3>
+                        <p>A JungleTour atua como intermediária entre você e os provedores locais, garantindo segurança, qualidade e os melhores preços. Nós:</p>
+                        
+                        <div class="mediation-steps">
+                            <div class="mediation-step">
+                                <div class="step-number">1</div>
+                                <h4>Avaliamos</h4>
+                                <p>Selecionamos apenas provedores com excelente reputação</p>
+                            </div>
+                            <div class="mediation-step">
+                                <div class="step-number">2</div>
+                                <h4>Negociamos</h4>
+                                <p>Obtemos as melhores condições e preços para você</p>
+                            </div>
+                            <div class="mediation-step">
+                                <div class="step-number">3</div>
+                                <h4>Garantimos</h4>
+                                <p>Servimos como mediador em caso de qualquer questão</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Inclusões Comuns -->
+                    <section class="tour-section">
+                        <h2 class="section-title">O que está geralmente incluído</h2>
+                        <div class="inclusions-list">
+                            <div class="inclusion-item">
+                                <i class="fas fa-check inclusion-icon"></i>
+                                <span>Hospedagem em ecolodge ou acampamento</span>
+                            </div>
+                            <div class="inclusion-item">
+                                <i class="fas fa-check inclusion-icon"></i>
+                                <span>Todas as refeições durante o passeio</span>
+                            </div>
+                            <div class="inclusion-item">
+                                <i class="fas fa-check inclusion-icon"></i>
+                                <span>Guias especializados</span>
+                            </div>
+                            <div class="inclusion-item">
+                                <i class="fas fa-check inclusion-icon"></i>
+                                <span>Traslados terrestres e fluviais</span>
+                            </div>
+                            <div class="inclusion-item">
+                                <i class="fas fa-check inclusion-icon"></i>
+                                <span>Equipamento de acampamento (quando aplicável)</span>
+                            </div>
+                            <div class="inclusion-item">
+                                <i class="fas fa-check inclusion-icon"></i>
+                                <span>Taxas de entrada em parques e comunidades</span>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- Garantia JungleTour -->
+                    <div class="guarantee-banner">
+                        <i class="fas fa-award"></i>
+                        <h3>Garantia JungleTour</h3>
+                        <p>Se sua experiência não corresponder ao descrito, nós intervimos e garantimos uma solução satisfatória ou seu dinheiro de volta!</p>
+                    </div>
+                </section>
+            </div>
+
+            <div class="tour-content-right">
+                <!-- Card de Dicas -->
+                <div class="info-card">
+                    <h3 class="info-card-title"><i class="fas fa-lightbulb"></i> Como escolher seu provedor</h3>
+                    <div style="margin-bottom: 15px;">
+                        <p><strong>1. Verifique as avaliações</strong> - Provedores com mais estrelas geralmente oferecem melhor experiência</p>
+                    </div>
+                    <div style="margin-bottom: 15px;">
+                        <p><strong>2. Compare as inclusões</strong> - Alguns provedores incluem experiências exclusivas</p>
+                    </div>
+                    <div>
+                        <p><strong>3. Considere o tamanho do grupo</strong> - Grupos menores oferecem experiência mais personalizada</p>
+                    </div>
+                </div>
+
+                <!-- Card de Suporte JungleTour -->
+                <div class="info-card">
+                    <h3 class="info-card-title"><i class="fas fa-headset"></i> Precisa de ajuda?</h3>
+                    <p style="margin-bottom: 15px;">Nossos especialistas podem ajudar você a escolher o provedor ideal para seu perfil de viajante.</p>
+                    <a href="contato.html" class="book-now-btn" style="background-color: #FF9800;">Falar com Especialista</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Rodapé -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-column">
+                    <h3>JungleTour</h3>
+                    <p>Oferecendo experiências inesquecíveis de aventura na selva desde 2025.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="footer-column">
+                    <h3>Links Rápidos</h3>
+                    <ul>
+                        <li><a href="/index.html">Início</a></li>
+                        <li><a href="/sobre.html">Sobre Nós</a></li>
+                        <li><a href="/passeios/index.html">Passeios</a></li>
+                        <li><a href="/contato.html">Contato</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Suporte</h3>
+                    <ul>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Política de Reservas</a></li>
+                        <li><a href="#">Diretrizes de Segurança</a></li>
+                        <li><a href="#">Política de Privacidade</a></li>
+                        <li><a href="#">Termos de Serviço</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Contato</h3>
+                    <ul>
+                        <li><i class="fas fa-map-marker-alt"></i>Rua indiaporã, New City, Manaus-AM </li>
+                        <li><i class="fas fa-phone"></i> +55 (92) 99364-5482</li>
+                        <li><i class="fas fa-envelope"></i> contato@jungletour.com.br</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2025 JungleTour. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+    <!-- Login -->
+    <div class="login-modal" id="loginModal">
+        <div class="overlay" id="overlay"></div>
+        <form class="form">
+          <p class="form-title">Entre para ver o melhor do <a href="/index.html" class="logo">Jungle<span>Tour</span></a></p>
+          <div class="input-container">
+            <input type="email" placeholder="Digite o email">
+          </div>
+          <div class="input-container">
+            <input type="password" placeholder="Digite a senha">
+          </div>
+          <button type="submit" class="submit">Log in</button>
+          <p class="signup-link">
+            Usuário novo?
+            <a href="cadastro.html">Registre-se</a>
+          </p>
+        </form>
+      </div>
+</body>
+</html>
